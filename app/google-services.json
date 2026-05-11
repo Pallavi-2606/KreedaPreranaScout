@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "206121713054",
+    "project_id": "kreedapreranascout-92437",
+    "storage_bucket": "kreedapreranascout-92437.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:206121713054:android:728a6d975c7549bc866a8f",
+        "android_client_info": {
+          "package_name": "com.example.kreedaprernascout"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCV3WYR-l3jVssjuNIcJ7yncQJNjx0udg8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

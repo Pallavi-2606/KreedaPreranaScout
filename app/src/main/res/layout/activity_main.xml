@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F7FA">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- 🏆 PAGE TITLE -->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Athlete Management"
+                android:textStyle="bold"
+                android:textSize="28sp"
+                android:textColor="#6200EE"
+                android:layout_marginBottom="16dp"/>
+
+            <!-- 🔍 MODERN SEARCH BAR -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:padding="12dp"
+                android:background="@android:drawable/editbox_background"
+                android:layout_marginBottom="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="🔍"
+                    android:textSize="20sp"/>
+
+                <EditText
+                    android:id="@+id/etSearch"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Search athletes..."
+                    android:background="@android:color/transparent"
+                    android:paddingStart="10dp"
+                    android:textSize="16sp"/>
+            </LinearLayout>
+
+            <!-- 👤 NAME -->
+
+            <EditText
+                android:id="@+id/etName"
+                android:hint="👤 Enter Athlete Name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:drawable/edit_text"
+                android:padding="12dp"
+                android:layout_marginBottom="10dp"/>
+
+            <!-- 🎂 AGE -->
+
+            <EditText
+                android:id="@+id/etAge"
+                android:hint="🎂 Enter Age"
+                android:inputType="number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:drawable/edit_text"
+                android:padding="12dp"
+                android:layout_marginBottom="10dp"/>
+
+            <!-- 🏃 SPORT -->
+
+            <EditText
+                android:id="@+id/etSport"
+                android:hint="🏃 Enter Sport"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:drawable/edit_text"
+                android:padding="12dp"
+                android:layout_marginBottom="16dp"/>
+
+            <!-- 💾 SAVE BUTTON -->
+
+            <Button
+                android:id="@+id/btnSave"
+                android:text="SAVE ATHLETE"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:backgroundTint="#6200EE"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginBottom="12dp"/>
+
+            <!-- 🏅 FILTER -->
+
+            <Spinner
+                android:id="@+id/spinnerSport"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"/>
+
+            <!-- 🚫 EMPTY MESSAGE -->
+
+            <TextView
+                android:id="@+id/tvEmpty"
+                android:text="Student not found"
+                android:textSize="16sp"
+                android:textColor="#FF0000"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="10dp"/>
+
+            <!-- 📋 RECYCLER VIEW -->
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <!-- ➕ FLOATING BUTTON -->
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="Add Athlete"
+        android:src="@android:drawable/ic_input_add"
+        app:backgroundTint="#03DAC5"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="16dp"/>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
